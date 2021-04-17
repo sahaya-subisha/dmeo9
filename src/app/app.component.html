@@ -1,0 +1,72 @@
+<div class="example-container">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>login/register</mat-card-title>
+      <mat-card-subtitle>angular project</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    
+    <mat-tab-group>
+        <mat-tab label="login"> 
+
+        <!-- <form class="example-form"> -->
+            <mat-form-field class="example-full-width">
+              <mat-label>Enetr your mail</mat-label>
+              <input type ="email" matInput placeholder="Ex. xxxx@gmail.com"  value="" [(ngModel)]="log_email">
+              <!-- <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email"> -->
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>enter your password</mat-label>
+              <input type ="password" matInput placeholder="password" name= "log_password" value=""  [(ngModel)]="log_password">
+              <!-- <textarea type= "password" matInput placeholder=""></textarea> -->
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+          <!-- </form> -->
+
+          <button class ="matnutton" mat-button color="primary" (click)="login()">login</button>
+          </mat-tab>
+
+        <mat-tab label="register"> 
+          <!-- <form class="example-form"> -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enetr your mail</mat-label>
+                <input type ="email" matInput placeholder="Ex. xxxx@gmail.com"  value="" [(ngModel)]="reg_email">
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+             <mat-label>Enetr your password</mat-label>
+            
+            <input type ="password" matInput placeholder="password"  value="" [(ngModel)]="reg_password">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+        
+          <mat-form-field class="example-full-width">
+            <mat-label>conform your password</mat-label>
+            <input type ="password" matInput placeholder="password" value=""  [(ngModel)]="reg_conform_password">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+            <!-- <textarea type= "password" matInput placeholder=""></textarea> -->
+          </mat-form-field> -->
+        <!-- </form> -->
+        <button class ="matnutton" mat-button color="primary" (click)="register()">register</button>
+     </mat-tab>
+        
+    </mat-tab-group>
+      
+    <mat-card-content>
+      <!-- <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p> -->
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
+  
